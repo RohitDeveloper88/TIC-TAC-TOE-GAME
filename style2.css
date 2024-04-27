@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(image/tic\ tac\ toe.png);
+}
+
+.a{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 40%;
+   width: 350px;
+    
+    border-radius: 50px;
+    background-color: rgb(63, 201, 63);
+    padding: 10px;
+    box-shadow: 0px 0px 80px 0px  rgb(95, 226, 14);
+    
+}
+
+ .a a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.a:hover{
+    background-color: aquamarine;
+}

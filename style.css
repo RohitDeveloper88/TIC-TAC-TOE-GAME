@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #548687;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+.instructions {
+   display: flex;
+   
+    text-align: left;
+    max-width: 1900px;
+    margin: 20px auto;
+    margin-right: 00px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.difficulty{
+    margin-top: 10px;
+    margin-right: 1000px;
+    
+}
+
+.instructions h2 {
+    font-size: 24px;
+    color: #ffffc7;
+    margin-bottom: 10px;
+}
+
+.instructions ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.instructions ul {
+    list-style-type: disc;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.instructions li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.balloon {
+    display: inline-block;
+    font-size: 24px;
+    margin: 5px;
+    animation: floatUp 3s ease-in-out;
+  }
+  
+  @keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+  }
+  
+
+.instructions p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+#volume-icon {
+    cursor: pointer;
+    font-size: 24px; 
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+.game {
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+    cursor: pointer;
+}
+
+.msg-container {
+    height: 15vh;
+}
+
+.hide {
+    display: none;
+}
+
+.hk {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#msg {
+    font-size: 5vh;
+    color: #ffffc7;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.player-score, .computer-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-score p, .computer-score p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hn {
+    margin-top: 40px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 80vh;
+    }
+    .game {
+        height: 50vh;
+        width: 50vh;
+    }
+    .box {
+        height: 15vh;
+        width: 15vh;
+        font-size: 6vmin;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        height: 90vh;
+    }
+    .game {
+        height: 40vh;
+        width: 40vh;
+    }
+    .box {
+        height: 12vh;
+        width: 12vh;
+        font-size: 4vmin;
+    }
+    .player-score p, .computer-score p {
+        font-size: 1rem;
+    }
+}
